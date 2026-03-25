@@ -150,12 +150,12 @@ header button:hover{
 .hero{
     min-height: calc(100vh - 100px);
     width: 100%;
-    /* background-color: red; */
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 40px 0 90px; /* bottom space so footer never overlaps */
+    padding: 40px 80px 90px; 
+
 }
 
 .prod-img img{
@@ -176,7 +176,7 @@ header button:hover{
 
 .details h1{
 
-    font-size: 60px;
+    font-size: 52px;
     line-height: 1.1;
     font-weight: 800;
     color: #fff;
@@ -221,7 +221,7 @@ header button:hover{
 }
 
 #shopNowBtn1{
-    background-color: #2C4BB1;
+    background: linear-gradient(90deg, #2C4BB1 0%, #4C7FD6 100%);
     color: var(--text-color);
     border: 0;
     cursor: pointer;
@@ -230,28 +230,35 @@ header button:hover{
     margin-top: 25px;
     padding: 18px 18px;
     width: 35%;
-    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 4px 16px 0 rgba(44,75,177,0.18);
+    transition: 0.3s ease-in-out;
 }
 
 #shopNowBtn1:hover {
-    background-color: #1d3466;
+    background: linear-gradient(90deg, #1d3466 0%, #3466b1 100%);
     color: #fff;
+    box-shadow: 0 6px 22px 0 rgba(29,52,102,0.23);
 }
 
 .addtochart{
-    background-color: rgb(53, 168, 177) !important;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    background: linear-gradient(90deg, #35a8b1 0%, #7ee8fa 100%) !important;
+    color: #fff;
+    box-shadow: 0 4px 16px 0 rgba(53,168,177,0.15);
+    transition: 
+        background 0.35s cubic-bezier(.4,0,.2,1), 
+        color 0.25s,
+        box-shadow 0.35s;
 }
 
 .addtochart:hover {
-    background-color: #28798d !important;
+    background: linear-gradient(90deg, #28798d 0%, #52c4dc 100%) !important;
     color: #fff;
+    box-shadow: 0 6px 22px 0 rgba(40,121,141,0.19);
 }
 
 
 
 
-/* Footer styling */
 .footer{
     position: relative;
     left: 0;
